@@ -1,4 +1,4 @@
-package io.child.app;
+package io.admin.app;
 
 import android.os.Bundle;
 
