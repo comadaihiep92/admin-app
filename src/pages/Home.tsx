@@ -125,7 +125,7 @@ const Home: React.FC = () => {
                 <IonText className="home__title">Appointment Center</IonText>
               </IonList>
             </IonRouterLink>
-            <IonRouterLink href="#" className="home__link">
+            <IonRouterLink href="/home" className="home__link">
               <IonList className="home__item">
                 <IonImg className="home__image" src={iconSlept} alt=""></IonImg>
                 <IonText className="home__title">Slept and ate time </IonText>
