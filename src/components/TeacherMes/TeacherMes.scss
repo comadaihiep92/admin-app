@@ -1,0 +1,53 @@
+// teacher mess
+
+.messages__link {
+  width: 100%;
+}
+.teachermes {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0;
+  }
+  &__name {
+    width: 90%;
+    color: #353535;
+    font-size: 14px;
+    font-weight: 600;
+  }
+  &__email {
+    width: 90%;
+    color: #8d8d8d;
+    font-size: 12px;
+  }
+  &__sub {
+    color: #8d8d8d;
+    font-size: 12px;
+  }
+}
+
+.btn--contact {
+  --background: #187bad;
+  --border-radius: 0;
+  color: white;
+  padding: 2px;
+  font-size: 12px !important;
+  text-transform: capitalize;
+}
+
+.btn--delete {
+  --background: #ea423b;
+  --border-radius: 0;
+  color: white;
+  padding: 2px;
+  font-size: 14px !important;
+  text-transform: capitalize;
+}

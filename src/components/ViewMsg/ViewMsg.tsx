@@ -60,7 +60,7 @@ const ViewMsg: React.FC = () => {
             <IonText>abc</IonText>
           </IonPopover>
           <IonButton
-            className="btn btn--search ion-no-padding"
+            className="btn btn--popover ion-no-padding"
             slot="end"
             // onClick={() => setShowPopover(true)}
           >

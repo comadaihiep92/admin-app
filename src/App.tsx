@@ -6,12 +6,15 @@ import Home from "./pages/Home";
 import AppointmentCenter from "./components/AppointmentCenter/AppointmentCenter";
 import ChildDailyInfo from "./components/ChildDailyInfo/ChildDailyInfo";
 import MyPicture from "./components/MyPicture/MyPicture";
-import MyMessages from "./components/MyMessages/MyMessages";
+import MessageCenter from "./components/MessageCenter/MessageCenter";
 import SchoolDocuments from "./components/SchoolDocuments/SchoolDocuments";
 import Login from "./components/Login/Login";
 import Marketing from "./components/Marketing/Marketing";
 import ViewMsg from "./components/ViewMsg/ViewMsg";
 import MyProfile from "./components/MyProfile/MyProfile";
+import CreateNewAcoount from "./components/CreateNewAcoount/CreateNewAcoount";
+import NewPassword from "./components/NewPassword/NewPassword";
+import Teacher from "./components/Teacher/Teacher";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -46,7 +49,7 @@ const App: React.FC = () => (
         />
         <Route path="/childdailyinfo" component={ChildDailyInfo} exact={true} />
         <Route path="/mypicture" component={MyPicture} exact={true} />
-        <Route path="/mymessages" component={MyMessages} exact={true} />
+        <Route path="/messagecenter" component={MessageCenter} exact={true} />
         <Route
           path="/schooldocuments"
           component={SchoolDocuments}
@@ -55,6 +58,13 @@ const App: React.FC = () => (
         <Route path="/marketing" component={Marketing} exact={true} />
         <Route path="/viewmsg" component={ViewMsg} exact={true} />
         <Route path="/myprofile" component={MyProfile} exact={true} />
+        <Route path="/newpassword" component={NewPassword} exact={true} />
+        <Route path="/teacher" component={Teacher} exact={true} />
+        <Route
+          path="/createnewacoount"
+          component={CreateNewAcoount}
+          exact={true}
+        />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

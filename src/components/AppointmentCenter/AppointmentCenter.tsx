@@ -31,7 +31,7 @@ import iconClock from "../../images/icon-clock.png";
 import img1 from "../../images/img-parent.png";
 import img2 from "../../images/img-parent2.png";
 import iconClose from "../../images/icon-close.png";
-import imgChild from "../../images/img-child.png";
+import iconSearch from "../../images/icon-search.png";
 
 const AppointmentCenter: React.FC = () => {
   const [showModal, setShowModal] = useState(false);
@@ -48,6 +48,9 @@ const AppointmentCenter: React.FC = () => {
           <IonTitle className="appointment__title-header">
             Appointment Center
           </IonTitle>
+          <IonButton className="btn btn--search ion-no-padding" slot="end">
+            <IonImg className="icon icon--search" src={iconSearch} alt="" />
+          </IonButton>
         </IonToolbar>
       </IonHeader>
       <IonContent>

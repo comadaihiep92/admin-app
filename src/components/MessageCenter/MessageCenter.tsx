@@ -25,7 +25,7 @@ import {
   IonAvatar,
 } from "@ionic/react";
 
-import "./MyMessages.scss";
+import "./MessageCenter.scss";
 
 import iconBack from "../../images/icon-back.png";
 import iconSearch from "../../images/icon-search.png";
@@ -33,10 +33,10 @@ import iconDownload from "../../images/icon-download.png";
 import imgAvataa from "../../images/img-avataa.png";
 import iconStar from "../../images/icon-star.png";
 
-const MyMessages: React.FC = () => {
+const MessageCenter: React.FC = () => {
   return (
     <IonPage className="appointment">
-      {/* <IonHeader className="ion-no-border appointment__header">
+      <IonHeader className="ion-no-border appointment__header">
         <IonToolbar className="appointment__toolbar">
           <IonButtons slot="start">
             <Link to="/home">
@@ -50,7 +50,7 @@ const MyMessages: React.FC = () => {
             <IonImg className="icon icon--search" src={iconSearch} alt="" />
           </IonButton>
         </IonToolbar>
-      </IonHeader> */}
+      </IonHeader>
       <IonContent>
         {/* <IonSearchbar
           value={searchText}
@@ -375,4 +375,4 @@ const MyMessages: React.FC = () => {
   );
 };
 
-export default MyMessages;
+export default MessageCenter;
