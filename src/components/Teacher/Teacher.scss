@@ -31,6 +31,7 @@
     --background: none;
   }
   &__label {
+    font-size: 15px;
     color: white;
     padding: 15px 0;
   }
@@ -38,4 +39,7 @@
 
 .icon {
   max-width: 25px;
+}
+.tab-selected {
+  border-bottom: 2px solid #fff;
 }
