@@ -1,0 +1,32 @@
+/* compose */
+.compose {
+  width: 100%;
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-self: flex-start;
+  &__row {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 10px 0;
+  }
+  &__text {
+    width: 20%;
+    color: #8f8f8f;
+    font-size: 15px;
+  }
+  &__input {
+    color: #424242;
+    font-size: 15px;
+  }
+  &__textarea {
+    height: 400px;
+    & .native-textarea {
+      height: 400px;
+    }
+  }
+}

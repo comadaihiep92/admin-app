@@ -26,8 +26,7 @@ import {
   IonPopover,
 } from "@ionic/react";
 
-import { Route, Redirect } from "react-router-dom";
-import "./ViewMsg.scss";
+import "./ViewMsgSent.scss";
 
 import iconBack from "../../images/icon-back.png";
 import iconDelete from "../../images/icon-delete.png";
@@ -37,14 +36,14 @@ import imgAvataa from "../../images/img-avataa.png";
 import iconStar from "../../images/icon-star.png";
 import iconReply from "../../images/icon-reply.png";
 
-const ViewMsg: React.FC = () => {
+const ViewMsgSent: React.FC = () => {
   const [showPopover, setShowPopover] = useState(false);
   return (
     <IonPage className="appointment">
       <IonHeader className="ion-no-border appointment__header">
         <IonToolbar className="appointment__toolbar">
           <IonButtons slot="start">
-            <Link to="/teacher">
+            <Link to="/messcenter">
               <IonImg className="icon icon-back" src={iconBack} alt="" />
             </Link>
           </IonButtons>
@@ -149,4 +148,4 @@ const ViewMsg: React.FC = () => {
   );
 };
 
-export default ViewMsg;
+export default ViewMsgSent;

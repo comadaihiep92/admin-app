@@ -7,3 +7,132 @@
 .mypicture__item2 {
   margin-top: 20px;
 }
+
+.marketing {
+  padding: 0 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  &__time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid #d7d7d7;
+  }
+  &__title {
+    color: #383838;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  &__input {
+    color: #626262;
+    font-size: 15px;
+  }
+  &__chart {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+    position: relative;
+    top: -100px;
+    background: none;
+    transform: rotate(-90deg);
+  }
+  &__chart-item {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+  &__progress {
+    height: 6px;
+    border-radius: 10px;
+    --progress-background: #187bad;
+    --background: #ebebeb;
+  }
+  &__text {
+    padding: 10px;
+    transform: rotate(90deg);
+    color: #383838;
+    font-size: 14px;
+  }
+}
+
+.footer__height {
+  height: 300px;
+}
+
+.footer__head-nobd {
+  border: none;
+}
+
+.pie-wrapper {
+  height: 5em;
+  width: 5em;
+  float: left;
+  margin: 15px;
+  position: relative;
+}
+.pie-wrapper .label {
+  background: #34495e;
+  border-radius: 50%;
+  bottom: 0.4em;
+  color: #ecf0f1;
+  cursor: default;
+  display: block;
+  font-size: 0.25em;
+  left: 0.4em;
+  line-height: 2.6em;
+  position: absolute;
+  right: 0.4em;
+  text-align: center;
+  top: 0.4em;
+}
+.pie-wrapper.style-2 .label {
+  background: none;
+  color: #7f8c8d;
+}
+.pie-wrapper .pie {
+  height: 100%;
+  width: 100%;
+  clip: rect(0, 5em, 5em, 0.5em);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.pie-wrapper .pie .half-circle {
+  height: 100%;
+  width: 100%;
+  border: 0.1em solid #3498db;
+  border-radius: 50%;
+  clip: rect(0, 1em, 5em, 0);
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+
+.pie-wrapper.progress-45 .pie .half-circle {
+  border-color: #1abc9c;
+}
+.pie-wrapper.progress-45 .pie .left-side {
+  transform: rotate(162deg);
+}
+.pie-wrapper.progress-45 .pie .right-side {
+  display: none;
+}
+
+.pie-wrapper.progress-45 .pie .half-circle {
+  border-color: #1abc9c;
+}
+
+.pie-wrapper .shadow {
+  height: 100%;
+  width: 100%;
+  border: 0.1em solid #bdc3c7;
+  border-radius: 50%;
+}

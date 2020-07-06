@@ -15,6 +15,10 @@ import MyProfile from "./components/MyProfile/MyProfile";
 import CreateNewAcoount from "./components/CreateNewAcoount/CreateNewAcoount";
 import NewPassword from "./components/NewPassword/NewPassword";
 import Teacher from "./components/Teacher/Teacher";
+import MessCenter from "./components/MessCenter/MessCenter";
+import ViewMsgSent from "./components/ViewMsgSent/ViewMsgSent";
+import Compose from "./components/Compose/Compose";
+import Notifications from "./components/Notifications/Notifications";
 
 /* Core CSS required for Ionic components to work properly */
 import "@ionic/react/css/core.css";
@@ -60,6 +64,11 @@ const App: React.FC = () => (
         <Route path="/myprofile" component={MyProfile} exact={true} />
         <Route path="/newpassword" component={NewPassword} exact={true} />
         <Route path="/teacher" component={Teacher} exact={true} />
+        <Route path="/messcenter" component={MessCenter} exact={true} />
+        <Route path="/viewmsgsent" component={ViewMsgSent} exact={true} />
+        <Route path="/compose" component={Compose} exact={true} />
+        <Route path="/notifications" component={Notifications} exact={true} />
+
         <Route
           path="/createnewacoount"
           component={CreateNewAcoount}

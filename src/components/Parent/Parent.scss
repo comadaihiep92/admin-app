@@ -1,1 +1,50 @@
 // Parent use TeacherMes.scss
+.modalDelete {
+  width: 100%;
+  padding: 125px 30px;
+  height: 100%;
+  &__list {
+    border-radius: 20px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+  &__img {
+    max-width: 100%;
+    display: block;
+    margin-bottom: 30px;
+  }
+  &__text {
+    color: #2f2e2f;
+    font-weight: 600;
+    font-size: 18px;
+  }
+  &__btn {
+    margin-top: 30px;
+    text-transform: capitalize;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 14px;
+    height: 40px;
+
+    &--wait {
+      text-transform: capitalize;
+      width: 45%;
+      --border-radius: unset;
+      --background: #9b9b9b;
+    }
+    &--delete {
+      text-transform: capitalize;
+      width: 45%;
+      --border-radius: unset;
+      --background: #ea423b;
+    }
+  }
+}

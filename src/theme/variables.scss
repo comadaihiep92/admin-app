@@ -282,6 +282,24 @@ http://ionicframework.com/docs/theming/ */
     --box-shadow: none;
     margin-left: 20px;
   }
+  &--deletegray {
+    --background: none;
+    --box-shadow: none;
+    width: 20px;
+    &::part(native) {
+      padding: 0;
+    }
+  }
+  &--delemail {
+    color: black;
+    --background: none;
+    --box-shadow: none;
+    width: 20px;
+    height: 20px;
+    &::part(native) {
+      padding: 0;
+    }
+  }
 }
 
 .label {
@@ -319,4 +337,8 @@ http://ionicframework.com/docs/theming/ */
     max-height: 38px;
     height: 38px;
   }
+}
+
+.hidden {
+  visibility: hidden;
 }

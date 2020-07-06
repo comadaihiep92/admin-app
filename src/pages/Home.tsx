@@ -40,12 +40,14 @@ const Home: React.FC = () => {
                 Home
               </IonTitle>
               <IonList className="home__noti">
-                <IonImg
-                  className="icon icon--noti"
-                  src={iconNotification}
-                  alt=""
-                />
-                <IonLabel className="home__label">1</IonLabel>
+                <IonRouterLink href="/notifications">
+                  <IonImg
+                    className="icon icon--noti"
+                    src={iconNotification}
+                    alt=""
+                  />
+                  <IonLabel className="home__label">1</IonLabel>
+                </IonRouterLink>
               </IonList>
               <IonButton
                 className="btn btn--search ion-no-padding"
@@ -72,7 +74,7 @@ const Home: React.FC = () => {
                 <IonText className="home__title">Teachers / Parents</IonText>
               </IonList>
             </IonRouterLink>
-            <IonRouterLink href="/messagecenter" className="home__link">
+            <IonRouterLink href="/messcenter" className="home__link">
               <IonList className="home__item">
                 <IonImg
                   className="home__image"
@@ -142,6 +144,16 @@ const Home: React.FC = () => {
               </IonList>
             </IonRouterLink>
             <IonRouterLink href="/createnewacoount" className="home__link">
+              <IonList className="home__item">
+                <IonImg
+                  className="home__image"
+                  src={iconCreatenew}
+                  alt=""
+                ></IonImg>
+                <IonText className="home__title">Create New Account</IonText>
+              </IonList>
+            </IonRouterLink>
+            <IonRouterLink className="home__link dpNone">
               <IonList className="home__item">
                 <IonImg
                   className="home__image"
