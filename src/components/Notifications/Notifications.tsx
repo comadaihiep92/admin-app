@@ -31,7 +31,7 @@ import { IonReactRouter } from "@ionic/react-router";
 
 import { Route, Redirect } from "react-router-dom";
 import React, { useState } from "react";
-
+import { FileChooser, FileChooserOriginal } from "@ionic-native/file-chooser";
 import "./Notifications.scss";
 import iconBack from "../../images/icon-back.png";
 import iconEdit from "../../images/icon-edit.png";
@@ -42,6 +42,15 @@ import iconDotWhite from "../../images/icon-dot.png";
 
 const Notifications: React.FC = () => {
   const [showPopover, setShowPopover] = useState(true);
+
+  const [image, setImage] = useState("");
+
+  const openFile = async () => {
+    const data = await FileChooser.open();
+    setImage(data);
+    console.log("a: ", data);
+    console.debug(123);
+  };
   return (
     <IonPage className="teacher">
       <IonReactRouter>
@@ -112,7 +121,10 @@ const Notifications: React.FC = () => {
               <IonText className="noti__text">Upload Picture</IonText>
               <IonList className="noti__list-email">
                 <IonList className="noti__item noti__input">
-                  <IonButton className="noti__email btn btn--choose2 ">
+                  <IonButton
+                    onClick={openFile}
+                    className="noti__email btn btn--choose2 "
+                  >
                     Choose file
                   </IonButton>
                 </IonList>
