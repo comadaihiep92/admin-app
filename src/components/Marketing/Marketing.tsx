@@ -56,60 +56,192 @@ const Marketing: React.FC = () => {
               <IonSelectOption>2014</IonSelectOption>
             </IonSelect>
           </IonList>
-          <IonList className="marketing__chart">
-            <IonList className="marketing__chart-item">
-              <IonText className="marketing__text">1</IonText>
-              <IonProgressBar className="marketing__progress" value={0.5} />
+          <IonList className="marketing__box">
+            <IonList className="marketing__chart">
+              <IonList className="marketing__chart-item">
+                <IonText className="marketing__text">1</IonText>
+                <IonProgressBar className="marketing__progress" value={0.8} />
+              </IonList>
+              <IonList className="marketing__chart-item">
+                <IonText className="marketing__text">2</IonText>
+                <IonProgressBar className="marketing__progress" value={0.7} />
+              </IonList>
+              <IonList className="marketing__chart-item">
+                <IonText className="marketing__text">3</IonText>
+                <IonProgressBar className="marketing__progress" value={0.6} />
+              </IonList>
+              <IonList className="marketing__chart-item">
+                <IonText className="marketing__text">4</IonText>
+                <IonProgressBar className="marketing__progress" value={0.5} />
+              </IonList>
+              <IonList className="marketing__chart-item">
+                <IonText className="marketing__text">5</IonText>
+                <IonProgressBar className="marketing__progress" value={0.4} />
+              </IonList>
+              <IonList className="marketing__chart-item">
+                <IonText className="marketing__text">6</IonText>
+                <IonProgressBar className="marketing__progress" value={0.3} />
+              </IonList>
+              <IonList className="marketing__chart-item">
+                <IonText className="marketing__text">7</IonText>
+                <IonProgressBar className="marketing__progress" value={0.4} />
+              </IonList>
+              <IonList className="marketing__chart-item">
+                <IonText className="marketing__text">8</IonText>
+                <IonProgressBar className="marketing__progress" value={0.5} />
+              </IonList>
+              <IonList className="marketing__chart-item">
+                <IonText className="marketing__text">9</IonText>
+                <IonProgressBar className="marketing__progress" value={0.6} />
+              </IonList>
+              <IonList className="marketing__chart-item">
+                <IonText className="marketing__text">10</IonText>
+                <IonProgressBar className="marketing__progress" value={0.7} />
+              </IonList>
             </IonList>
-            <IonList className="marketing__chart-item">
-              <IonText className="marketing__text">2</IonText>
-              <IonProgressBar className="marketing__progress" value={0.7} />
-            </IonList>
-            <IonList className="marketing__chart-item">
-              <IonText className="marketing__text">3</IonText>
-              <IonProgressBar className="marketing__progress" value={0.7} />
-            </IonList>
-            <IonList className="marketing__chart-item">
-              <IonText className="marketing__text">4</IonText>
-              <IonProgressBar className="marketing__progress" value={0.7} />
-            </IonList>
-            <IonList className="marketing__chart-item">
-              <IonText className="marketing__text">5</IonText>
-              <IonProgressBar className="marketing__progress" value={0.7} />
-            </IonList>
-            <IonList className="marketing__chart-item">
-              <IonText className="marketing__text">6</IonText>
-              <IonProgressBar className="marketing__progress" value={0.7} />
-            </IonList>
-            <IonList className="marketing__chart-item">
-              <IonText className="marketing__text">7</IonText>
-              <IonProgressBar className="marketing__progress" value={0.7} />
-            </IonList>
-            <IonList className="marketing__chart-item">
-              <IonText className="marketing__text">8</IonText>
-              <IonProgressBar className="marketing__progress" value={0.7} />
-            </IonList>
-            <IonList className="marketing__chart-item">
-              <IonText className="marketing__text">9</IonText>
-              <IonProgressBar className="marketing__progress" value={0.7} />
-            </IonList>
-            <IonList className="marketing__chart-item">
-              <IonText className="marketing__text">10</IonText>
-              <IonProgressBar className="marketing__progress" value={0.7} />
+
+            <IonList className="circle">
+              <div className="circle__pie circle__pie-one">
+                <svg className="circle__svg">
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                </svg>
+                <div className="circle__number">
+                  <span className="circle__label">40%</span>
+                </div>
+                <p className="circle__text">Not Used</p>
+              </div>
+              <div className="circle__pie circle__pie-two">
+                <svg className="circle__svg">
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                </svg>
+                <div className="circle__number">
+                  <span className="circle__label">60%</span>
+                </div>
+                <p className="circle__text">Used</p>
+              </div>
+              <div className="circle__pie circle__pie-three">
+                <svg className="circle__svg">
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                </svg>
+                <div className="circle__number">
+                  <span className="circle__label">50</span>
+                </div>
+                <p className="circle__text">Slots</p>
+              </div>
+              <div className="circle__pie circle__pie-four">
+                <svg className="circle__svg">
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                  <circle
+                    className="circle__circle"
+                    cx="40"
+                    cy="40"
+                    r="40"
+                  ></circle>
+                </svg>
+                <div className="circle__number">
+                  <span className="circle__label">1,030</span>
+                </div>
+                <p className="circle__text">Views</p>
+              </div>
+
+              {/* <div className="pie-wrapper progress-45 style-2">
+                <span className="label">
+                  45<span className="smaller">%</span>
+                </span>
+                <div className="pie">
+                  <div className="left-side half-circle"></div>
+                  <div className="right-side half-circle"></div>
+                </div>
+                <div className="shadow"></div>
+              </div> */}
             </IonList>
           </IonList>
-          {/* <IonList>
-            <div className="pie-wrapper progress-45 style-2">
-              <span className="label">
-                45<span className="smaller">%</span>
-              </span>
-              <div className="pie">
-                <div className="left-side half-circle"></div>
-                <div className="right-side half-circle"></div>
-              </div>
-              <div className="shadow"></div>
-            </div>
-          </IonList> */}
         </IonList>
       </IonContent>
       <IonFooter>

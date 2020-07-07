@@ -25,7 +25,7 @@ import {
 } from "@ionic/react";
 
 import "./SchoolDocuments.scss";
-
+import { FileChooser, FileChooserOriginal } from "@ionic-native/file-chooser";
 import iconBack from "../../images/icon-back.png";
 import iconSearch from "../../images/icon-search.png";
 // import iconDelete from "../../images/icon-download.png";
@@ -34,6 +34,14 @@ import imgUpload from "../../images/icon-upload.png";
 
 const SchoolDocuments: React.FC = () => {
   const [searchText, setSearchText] = useState("");
+  const [image, setImage] = useState("");
+
+  const openFile = async () => {
+    const data = await FileChooser.open();
+    setImage(data);
+    console.log("a: ", data);
+    console.debug(123);
+  };
   return (
     <IonPage className="appointment">
       <IonHeader className="ion-no-border appointment__header">
@@ -117,12 +125,15 @@ const SchoolDocuments: React.FC = () => {
         <IonList className="mypicture">
           <IonList className="mypicture__draglist">
             <IonImg className="img img--upload" src={imgUpload} alt="" />
-            <IonText className="mypicture__desc">
-              Drag files here or{" "}
-              <IonRouterLink className="color color--blue">
+            <IonList className="mypicture__browser">
+              <IonText className="mypicture__desc">Drag files here or </IonText>
+              <IonButton
+                onClick={openFile}
+                className="btn btn--browse color color--blue"
+              >
                 browse
-              </IonRouterLink>
-            </IonText>
+              </IonButton>
+            </IonList>
           </IonList>
         </IonList>
       </IonContent>
